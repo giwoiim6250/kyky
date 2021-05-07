@@ -1,0 +1,138 @@
+@charset "UTF-8";
+html,body{
+	width: 100%;
+ 	height:100%;
+ 	padding:0;
+}
+.wrapper{
+	width: 100%;
+	height:100%;
+	background: url(../../images/public/bg-body-black.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+}
+.content{
+	color:#ffc047;
+	padding:1.2rem 0.6rem;
+}
+.content dl{
+	position: relative;
+}
+.photo-show img{
+	display: block;
+	max-height: 100%;
+    max-width: 100%;
+}
+.driver-info{
+	font-size: 0.18rem;
+	text-align: center;
+	padding-top: 0.2rem;
+}
+.btn-box{
+	position: absolute;
+	right:0;
+	bottom:0.2rem;
+	font-size: 0;
+}
+.btn-heart-box{
+	display: inline-block;
+}
+.btn-heart{
+	display: inline-block;
+	width:0.27rem;
+	height:0.21rem;
+	background: url(../../images/works-detail/icon-heart.png) no-repeat;
+	background-size:100% 100%;
+}
+.btn-share{
+	display: inline-block;;
+	width:0.21rem;
+	height:0.25rem;
+	background: url(../../images/works-detail/icon-share.png) no-repeat;
+	background-size:100% 100%;
+}
+.num-zan{
+	color:#fff;
+	font-size: 0.16rem;
+	margin:0 0.15rem;
+}
+.driver-introduction{
+	padding-top:0.7rem;
+	font-size: 0.24rem;
+	min-height: 2rem;
+	word-wrap: break-word;
+}
+.photo-show{
+    width:5.14rem;
+    height:3.43rem;
+    overflow:hidden;
+    box-shadow: 3px 3px 0 #ae8332;
+    background: #fff;
+   	text-align: center;
+    display:block;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+}
+.show-bigimg{
+	display:none;
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index: 200;
+	width:100%;
+	height:100%;
+	display:none;
+    background-color:#000;
+    background:rgba(0,0,0,0.90); filter:alpha(opacity=90);
+    z-index: 1200;
+}
+
+.show-bigimg-div{
+	display:block;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    width:100%;
+    height:100%;
+}
+.show-bigimg img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+.upload-btn-box{
+	text-align: center;
+	font-size:0;
+	padding-top:1rem;
+	padding-bottom:0.31rem;
+}
+.upload-btn,.upload-btn span{
+	text-align: center;
+	width:1.91rem;
+	height: 0.56rem;
+	line-height: 0.56rem;
+	color:#fff;
+	font-size:0.28rem;
+	display:inline-block;
+}
+.upload-btn{
+	transform:skew(-45deg,0deg);
+	background-color: #cc9834;
+}
+
+.upload-btn span{
+	transform:skew(45deg,0deg);
+}

@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS buying_Info
+(
+   id                   int not null AUTO_INCREMENT,
+   username             varchar(50) comment '姓名',
+   address_province     varchar(20) comment '地址省份',
+   address_city         varchar(20) comment '地址城市',
+   address_district     varchar(100) comment '地址区',
+   sex                  smallint comment '性别（1男，2女）',
+   birthday             date,
+   telephone            varchar(15),
+   car_model            smallint comment '车型 1经典 2新世代',
+   mileage              int comment '里程',
+   buy_date             date comment '购买日期',
+   storeAddress         varchar(200) comment '4S店',
+   business_username    varchar(50) comment '业务员姓名',
+   business_telephone   varchar(15) comment '业务员电话',
+   info_type            smallint comment '信息类别 1经销商 2车主',
+   picture              varchar(200) comment '照片URL',
+   story                varchar(300) comment '故事内容',
+   praise_num           int comment '点赞数量',
+   purchase_num         int comment '购买数量' ,
+   create_time          date comment '创建时间' ,
+   description          varchar(100) comment '简述' ,
+   status               smallint comment '1有效0无效',
+   primary key (id)
+);

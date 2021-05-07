@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/*上传*/
+.upload-page{
+	padding:1.15rem 0.65rem 0 0.65rem;
+}
+.upload-img-box{
+	background-color: #fff;
+	height:2.3rem;
+	font-size:2rem;
+	text-align: center;
+	line-height: 2.3rem;
+	box-shadow: 0.04rem 0.04rem 0 #cc9834;
+	color:#cc9834;
+	overflow: hidden;
+}
+.webuploader-pick{
+	position: relative;
+	display: block;
+	cursor: pointer;
+	background-color: #fff;
+	height:2.3rem;
+	font-size:2rem;
+	text-align: center;
+	line-height: 2.3rem;
+	color:#cc9834;
+	overflow: hidden;
+	padding:0;
+}
+.upload-img-box img{
+	height: 100%;
+    font-size: 0;
+}
+.upload-img-text{
+	text-align: right;
+	font-size:0.18rem;
+	height:0.5rem;
+	line-height: 0.5rem;
+	color:#fff;
+	padding-top:0.04rem;
+}
+.upload-info-text{
+	text-align: center;
+	font-size:0.24rem;
+	height:0.65rem;
+	line-height: 0.65rem;
+	color:#fff;
+	padding-top:0.35rem;
+}
+.upload-story{
+	height:3rem;
+	box-shadow: 0.04rem 0.04rem 0 #cc9834;
+	color:#333;
+	padding: 0;
+    width: 96%;
+    font-size:0.24rem;
+    padding:2%;
+    border:0;
+}
+
+.upload-btn-box{
+	text-align: center;
+	font-size:0;
+	padding-top:1rem;
+	padding-bottom:0.31rem;
+}
+.upload-btn,.upload-btn span{
+	text-align: center;
+	width:1.91rem;
+	height: 0.56rem;
+	line-height: 0.56rem;
+	color:#fff;
+	font-size:0.28rem;
+	display:inline-block;
+}
+.upload-btn{
+	transform:skew(-45deg,0deg);
+	background-color: #cc9834;
+}
+
+.upload-btn span{
+	transform:skew(45deg,0deg);
+}
+
+/*上传成功*/
+.upload-success-page{
+	padding:0.5rem 0.48rem 0.5rem 0.48rem;
+}
+.logo-box{
+	text-align: center;
+	font-size:0;
+}
+.logo-box img{
+	width:1.49rem;
+}
+.success-img-show{
+	background-color: #fff;
+	padding:0.15rem 0.18rem 0.25rem 0.18rem;
+	height:3.2rem;
+	overflow: hidden;
+	margin-top:1rem;
+	box-shadow: 0.12rem 0.12rem 0 #cc9834;
+}
+.success-img-show img{
+	height:3.2rem;
+	font-size:0;
+}
+.success-show-text{text-align: center;font-size:0;}
+.success-show-text-title,.success-show-text-title span{
+	text-align: center;
+	width:2.25rem;
+	height: 0.60rem;
+	line-height: 0.60rem;
+	color:#fff;
+	font-size:0.36rem;
+	display:inline-block;
+	margin-top:-0.1rem;
+}
+.success-show-text-title{
+	transform:skew(-45deg,0deg);
+	background-color: #fff;
+	box-shadow: 0.12rem 0.12rem 0 #cc9834;
+}
+
+.success-show-text-title span{
+	transform:skew(45deg,0deg);
+	color:#cc9834;
+}
+
+.upload-success-page .upload-btn-box{
+	padding-top:1.9rem;
+}
+.upload-success-page .upload-btn-box .upload-btn,.upload-success-page .upload-btn-box .upload-btn span{
+	width:2.25rem;
+	height: 0.67rem;
+	line-height: 0.67rem;
+}

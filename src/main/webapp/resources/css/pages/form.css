@@ -1,0 +1,236 @@
+@charset 'UTF-8';
+
+.info-edit-page
+{
+    padding-top: .5rem;
+}
+
+.logo-box
+{
+    text-align: center;
+}
+
+.logo-box img
+{
+    width: 1.49rem;
+}
+
+.dealer-edit-cont-title
+{
+    font-size: .36rem;
+    line-height: .78rem;
+
+    height: .78rem;
+
+    text-align: center;
+
+    color: #cc9834;
+}
+
+.owner-edit .dealer-edit-cont-btn
+{
+    padding-top: .7rem;
+}
+
+.owner-edit .dealer-edit-cont-title
+{
+    padding-top: .3rem;
+    padding-bottom: .1rem;
+}
+
+.dealer-edit-cont-info td
+{
+    font-size: .24rem;
+
+    padding-bottom: .21rem;
+
+    vertical-align: top;
+}
+
+td.edit-title
+{
+    font-size: .24rem;
+    line-height: 180%;
+
+    width: 28%;
+    padding-right: .3rem;
+
+    text-align: right;
+    vertical-align: top;
+
+    color: #fff;
+}
+
+td.edit-cont
+{
+    width: 50%;
+
+    text-align: left;
+    vertical-align: top;
+}
+
+td.edit-cont input[type='text'],
+td.edit-cont input[type='date'],
+td.edit-cont input[type='number']
+{
+    font-size: .24rem;
+    line-height: .48rem;
+
+    float: left;
+
+    width: 2.84rem;
+    height: .48rem;
+    margin: 0;
+    padding: 0;
+    padding: 0 0 0 .2rem;
+
+    border: 0;
+    background-color: #fff;
+    box-shadow: .04rem .04rem 0 #cc9834;
+}
+
+td.edit-cont select.select-province,
+td.edit-cont select.select-city
+{
+    font-size: .24rem;
+    line-height: .48rem;
+
+    float: left;
+
+    width: 45%;
+    height: .48rem;
+    margin-right: 5%;
+    margin-bottom: .21rem;
+    padding: 0 0 0 .2rem;
+
+    color: #020e4e;
+    border: 0;
+    background-color: #fff;
+    box-shadow: .04rem .04rem 0 #cc9834;
+}
+
+.tip-error
+{
+    font-size: .24rem;
+    line-height: 180%;
+
+    display: none;
+
+    color: #f00;
+}
+
+.tip-error.show
+{
+    display: block;
+}
+
+.input-unit
+{
+    font-size: .24rem;
+    line-height: .48rem;
+
+    position: absolute;
+    top: 0;
+    right: 10%;
+
+    width: .5rem;
+    height: .48rem;
+
+    text-align: right;
+
+    color: #333;
+}
+
+td.edit-cont select.select-4S
+{
+    font-size: .24rem;
+    line-height: .48rem;
+
+    float: left;
+
+    width: 95%;
+    height: .48rem;
+    margin-right: 5%;
+    padding: 0 0 0 .2rem;
+
+    color: #020e4e;
+    border: 0;
+    background-color: #fff;
+    box-shadow: .04rem .04rem 0 #cc9834;
+}
+
+td.edit-alert
+{
+    text-align: left;
+}
+
+td.td-sex
+{
+    line-height: 180%;
+
+    color: #fff;
+}
+
+td.td-sex label
+{
+    display: inline-block;
+
+    width: 45%;
+
+    vertical-align: middle;
+}
+
+td.td-sex label input
+{
+    display: inline-block;
+
+    width: .23rem;
+    height: .23rem;
+
+    vertical-align: middle;
+}
+
+td.td-sex label span
+{
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+.dealer-edit-cont-btn
+{
+    font-size: 0;
+
+    padding-top: .1rem;
+    padding-bottom: .31rem;
+
+    text-align: center;
+}
+
+.btn-pub,
+.btn-pub span
+{
+    font-size: .28rem;
+    line-height: .56rem;
+
+    display: inline-block;
+
+    width: 1.91rem;
+    height: .56rem;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.btn-pub
+{
+    transform: skew(-45deg, 0deg);
+
+    background-color: #cc9834;
+}
+
+.btn-pub span
+{
+    transform: skew(45deg, 0deg);
+}

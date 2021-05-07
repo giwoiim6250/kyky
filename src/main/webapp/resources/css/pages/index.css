@@ -1,0 +1,284 @@
+@charset "UTF-8";
+html,body{
+	width: 100%;
+ 	height:100%;
+ 	padding:0;
+}
+.hide{
+	display: none;
+}
+.swiper-container ,.swiper-slide{
+    height:100%;
+}
+
+/*一楼*/
+.wrapper1{
+	width: 100%;
+	height:100%;
+	background: url(../../images/index/first-bg-body.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+}
+.logo{
+	width: 1.49rem;
+	height: 0.87rem;
+	background: url(../../images/public/logo.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top:0.5rem;
+	left:0;
+	right:0;
+	margin:0 auto;
+}
+.text-title img{
+	position: absolute;
+	margin:0 auto;
+	left:0;
+	right:0;
+	z-index: 10;
+
+}
+.wrapper1 img:nth-child(1){
+	width: 5.08rem;
+	top:3.45rem;
+}
+.wrapper1 img:nth-child(2){
+	width: 2.58rem;
+	top:4.45rem;
+}
+.wrapper1 img:nth-child(3){
+	width: 5rem;
+	top:62%;
+}
+.wrapper1 img:nth-child(4){
+	width: 100%;
+	height:100%;
+	top:0;
+	z-index: 0;
+}
+.arrow{
+	position: fixed;
+	width: 0.68rem;
+	bottom:5%;
+	left: 0;
+	right:0;
+	z-index: 10;
+    	margin: 0 auto;
+}
+/*二楼*/
+.wrapper2{
+	width: 100%;
+	height:100%;
+	background: url(../../images/index/second-bg-body.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.wrapper2 img:nth-child(1){
+	width: 3.21rem;
+	top:1rem;
+}
+.wrapper2 img:nth-child(2){
+	width: 3.85rem;
+	top:1.5rem;
+}
+.wrapper2 img:nth-child(3){
+	width: 4.36rem;
+	top:1.95rem;
+}
+.wrapper2 img:nth-child(4){
+	width: 2.06rem;
+	top:2.63rem;
+}
+.wrapper2 img:nth-child(5){
+	width: 2.09rem;
+	top:3.23rem;
+}
+.wrapper2 img:nth-child(6){
+	width: 100%;
+	height:100%;
+	top:0;
+	z-index: 0;
+}
+
+/*三楼*/
+.wrapper3{
+	width: 100%;
+	height:100%;
+	background: url(../../images/index/third-bg-body.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.wrapper3 img:nth-child(1){
+	width: 3.21rem;
+	top:1rem;
+}
+.wrapper3 img:nth-child(2){
+	width: 3.85rem;
+	top:1.5rem;
+}
+.wrapper3 img:nth-child(3){
+	width: 2.09rem;
+	top:2.63rem;
+}
+.wrapper3 img:nth-child(4){
+	width: 100%;
+	height:100%;
+	top:0;
+	z-index: 0;
+}
+
+/*四楼*/
+.wrapper4{
+	width: 100%;
+	height:100%;
+	background: url(../../images/index/four-bg-body.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.wrapper4 img:nth-child(1){
+	width: 3.21rem;
+	top:1rem;
+}
+.wrapper4 img:nth-child(2){
+	width: 3.85rem;
+	top:1.5rem;
+}
+.wrapper4 img:nth-child(3){
+	width: 2.09rem;
+	top:2.63rem;
+}
+.wrapper4 img:nth-child(4){
+	width: 100%;
+	height:100%;
+	top:0;
+	z-index: 0;
+}
+
+/*五楼*/
+.wrapper5{
+	width: 100%;
+	height:100%;
+	background: url(../../images/index/gift1-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+}
+/*
+.wrapper5 img:nth-child(1){
+	width: 6.4rem;
+	top:2.98rem;
+}
+.wrapper5 img:nth-child(2){
+	width: 6.4rem;
+	top:2.98rem;
+}
+.wrapper5 img:nth-child(3){
+	width: 4.54rem;
+	top:4.55rem;
+}
+.wrapper5 img:nth-child(4){
+	width: 6.4rem;
+	bottom:0;
+}
+.wrapper5 img:nth-child(5){
+	width: 6.4rem;
+	bottom:0;
+	z-index: 1;
+}*/
+.wrapper5 img:nth-child(2){
+	width: 6.4rem;
+	top:0.63rem;
+}
+.wrapper5 img:nth-child(1){
+	width: 6.4rem;
+	bottom:0;
+}
+
+/*六楼*/
+.wrapper6{
+	width: 100%;
+	height:100%;
+	background: url(../../images/index/five-bg-body.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+}
+.logo{
+	width: 1.49rem;
+	height: 0.87rem;
+	background: url(../../images/public/logo.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top:0.5rem;
+	left:0;
+	right:0;
+	margin:0 auto;
+}
+
+.wrapper6 img:nth-child(1){
+	width: 5.08rem;
+	top:52%;
+}
+.wrapper6 img:nth-child(2){
+	width: 3.49rem;
+	top:63%;
+}
+.wrapper6 img:nth-child(3){
+	width: 100%;
+	height:100%;
+	top:0;
+	z-index: 0;
+}
+.wrapper6 .menu-list{
+	width: 80%;
+    left: 10%;
+    position: absolute;
+    bottom: 3%;
+    font-size: 0.34rem;
+    color: #fff;
+    height: 1.7rem;
+    z-index: 1000;
+}
+.wrapper6 .menu-list li{
+	position: absolute;
+    width: 40%;
+    height: 0.62rem;
+    line-height: 0.62rem;
+    background: #cc9834;
+    text-align: center;
+    margin: 0.15rem 5%;
+    transform: skew(-60deg);
+    -webkit-transform: skew(-60deg);
+    font-size: 0.30rem;
+}
+.wrapper6 .menu-list li a{
+	position: absolute;
+	left: 0;
+    right: 0;
+	text-decoration: none;
+	transform: skew(60deg);
+    -webkit-transform: skew(60deg);
+    color: #fff;
+}
+.wrapper6 .menu-list li:nth-child(1){
+	left:0;
+	top:0;
+	width:90%;
+}
+/*
+.wrapper6 .menu-list li:nth-child(2){
+	right:0;
+	top:0;
+}*/
+.wrapper6 .menu-list li:nth-child(2){
+	left:0;
+	top:0.84rem;
+}
+.wrapper6 .menu-list li:nth-child(3){
+	right:0;
+	top:0.84rem;
+}
