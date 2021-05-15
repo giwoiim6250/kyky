@@ -4,9 +4,9 @@ body,html{
 }
 
 body{
-  background:#000; /* 一些不支持背景渐变的浏览器 */
-  background-image:-webkit-linear-gradient(to bottom, #000, #2e2e2e,#000);
-  background-image:linear-gradient(to bottom, #000, #2e2e2e,#000);
+  background:#fff; /* 一些不支持背景渐变的浏览器 */
+  /*background-image:-webkit-linear-gradient(to bottom, #000, #2e2e2e,#000);
+  background-image:linear-gradient(to bottom, #000, #2e2e2e,#000);*/
 }
 
 /*提示框*/
