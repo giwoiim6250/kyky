@@ -4,9 +4,40 @@ body,html{
 }
 
 body{
-  background:#fff; /* 一些不支持背景渐变的浏览器 */
+  background-color:#fff; /* 一些不支持背景渐变的浏览器 */
   /*background-image:-webkit-linear-gradient(to bottom, #000, #2e2e2e,#000);
   background-image:linear-gradient(to bottom, #000, #2e2e2e,#000);*/
+}
+.pub-bg{
+  background: url(../../images/public/pub-bg.jpg) no-repeat;
+  background-size: 100% auto;
+  background-color:#fff;
+}
+
+.pub-bg-inner{
+  background: url(../../images/public/pub-bottom.jpg) no-repeat;
+  background-size: 100% auto;
+  background-position: 0 bottom;
+  padding-bottom: 5.3rem;
+}
+.pub-bottom{
+  background: url(../../images/public/pub-bottom.jpg) no-repeat;
+  background-size: 100% auto;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  width:100%;
+  height:5.08rem;
+}
+.pub-btn{
+  border-radius:  0.1rem;
+  border: 0.1rem solid #191e6c;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color:#191e6c;
 }
 
 /*提示框*/

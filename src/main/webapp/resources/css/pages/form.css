@@ -2,7 +2,15 @@
 
 .info-edit-page
 {
-    padding-top: .5rem;
+    padding-top: 1.35rem;
+}
+
+.dealer-success .info-edit-page{
+    padding-top: 2.22rem;
+}
+
+.dealer-success .dealer-edit-cont-info{
+    margin-top: 0.85rem;
 }
 
 .logo-box
@@ -17,14 +25,11 @@
 
 .dealer-edit-cont-title
 {
-    font-size: .36rem;
-    line-height: .78rem;
-
-    height: .78rem;
-
-    text-align: center;
-
-    color: #cc9834;
+    font-size: .44rem;
+    line-height: 1.3rem;
+    width: 4.8rem;
+    height: 1.3rem;
+    margin: 0 auto;
 }
 
 .owner-edit .dealer-edit-cont-btn
@@ -34,79 +39,134 @@
 
 .owner-edit .dealer-edit-cont-title
 {
-    padding-top: .3rem;
-    padding-bottom: .1rem;
 }
-
+.owner-edit .dealer-edit-cont-info{
+    margin-top:0.9rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.dealer-edit-cont-info{
+    border-radius:  0.1rem;
+  border: 0.1rem solid #191e6c;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color:#191e6c;
+  width: 7.4rem;
+  margin:0.2rem auto 0 auto;
+  padding: 0.35rem 0;
+}
+.dealer-success-info{
+    height: 5rem;
+    text-align:center;
+}
+.dealer-success-info::after{
+    height: 5rem;
+    width:0;
+    overflow:hidden;
+    display:inline-block;
+    vertical-align: middle;
+    content:'';
+}
+.success-info-middle{
+    display:inline-block;
+    vertical-align: middle;
+    font-size:1rem;
+    text-indent: 0.7rem;
+     letter-spacing: 0.15rem;
+    /*text-shadow: 0 0 0.1rem #333;*/
+}
+.btn-success-form{
+    width: 4.24rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    display: inline-block;
+    color: #191e6c;
+    font-size: 0.44rem;
+    font-weight: 100;
+    margin-bottom: 0.3rem;
+}
 .dealer-edit-cont-info td
 {
     font-size: .24rem;
-
-    padding-bottom: .21rem;
-
+    /*padding-bottom: .21rem;*/
     vertical-align: top;
 }
 
+
 td.edit-title
 {
-    font-size: .24rem;
-    line-height: 180%;
-
-    width: 28%;
-    padding-right: .3rem;
-
-    text-align: right;
-    vertical-align: top;
-
-    color: #fff;
+    font-size: .38rem;
+    padding: 0.1rem 0 ;
+    text-align: center;
 }
 
 td.edit-cont
 {
-    width: 50%;
-
-    text-align: left;
-    vertical-align: top;
+    text-align: center;
+    vertical-align: middle;
 }
 
+.edit-cont-box{
+    width: 5.1rem;
+    margin:0 auto;
+    position:relative;
+}
+.edit-cont-box .tip-error{
+    position:absolute;
+    right:0.2rem;
+    top:0;
+    font-size: .24rem;
+    line-height: .6rem;
+    height: .55rem;
+    font-weight:100;
+}
 td.edit-cont input[type='text'],
 td.edit-cont input[type='date'],
 td.edit-cont input[type='number']
 {
-    font-size: .24rem;
-    line-height: .48rem;
-
-    float: left;
-
-    width: 2.84rem;
-    height: .48rem;
-    margin: 0;
-    padding: 0;
-    padding: 0 0 0 .2rem;
-
+    font-size: .34rem;
+    line-height: .55rem;
+    height: .55rem;
+    width: 4.7rem;
+    padding: 0 0.2rem;
+    color: #191e6c;
     border: 0;
+    font-weight: 100;
+    border-radius: 0.08rem;
     background-color: #fff;
-    box-shadow: .04rem .04rem 0 #cc9834;
+        overflow: hidden;
+    box-shadow: inset 0 0 0.3rem #b9bcd4;
+}
+td.edit-cont.edit-error input[type='text'],
+td.edit-cont.edit-error input[type='date'],
+td.edit-cont.edit-error input[type='number']{
+    box-shadow: inset 0 0 0.3rem #fc7070;
+    color:#fc7070;
 }
 
 td.edit-cont select.select-province,
 td.edit-cont select.select-city
 {
-    font-size: .24rem;
-    line-height: .48rem;
-
-    float: left;
-
-    width: 45%;
-    height: .48rem;
-    margin-right: 5%;
-    margin-bottom: .21rem;
-    padding: 0 0 0 .2rem;
-
-    color: #020e4e;
+    font-size: .34rem;
+    line-height: .55rem;
+    width: 40%;
+    height: .55rem;
+    padding: 0 0.2rem;
+    color: #191e6c;
     border: 0;
+    font-weight: 100;
+    border-radius: 0.08rem;
+        overflow: hidden;
     background-color: #fff;
-    box-shadow: .04rem .04rem 0 #cc9834;
+    box-shadow: inset 0 0 0.3rem #b9bcd4;
+}
+
+td.edit-cont.edit-error select.select-province,
+td.edit-cont.edit-error select.select-city{
+    box-shadow: inset 0 0 0.3rem #fc7070;
+    color:#fc7070;
 }
 
 .tip-error
@@ -116,10 +176,10 @@ td.edit-cont select.select-city
 
     display: none;
 
-    color: #f00;
+    color: #fc7070;
 }
 
-.tip-error.show
+.edit-error .tip-error
 {
     display: block;
 }
@@ -201,13 +261,23 @@ td.td-sex label span
 {
     font-size: 0;
 
-    padding-top: .1rem;
+    padding-top: .42rem;
     padding-bottom: .31rem;
 
     text-align: center;
 }
 
-.btn-pub,
+.dealer-edit-cont-btn .btn-confirm{
+    padding:0 0.6rem;
+    height:0.8rem;
+    line-height:0.8rem;
+    display:inline-block;
+    color:#191e6c;
+    font-size:0.44rem;
+    font-weight: 100;
+}
+
+/*.btn-pub,
 .btn-pub span
 {
     font-size: .28rem;
@@ -233,4 +303,87 @@ td.td-sex label span
 .btn-pub span
 {
     transform: skew(45deg, 0deg);
+}*/
+
+
+.contest-subtitle{
+    height:1.33rem;
+    padding:0.2rem 0 0.1rem 0;
+    font-size: 0.44rem;
+    text-align:center;
+    color: #191e6c;
+}
+.contest-subtitle .contest-subtitle-tip{
+    font-size:0.24rem;
+}
+.contest-subtitle::after{
+    height:1.33rem;
+    width:0;
+    content:'';
+    overflow:hidden;
+    display:inline-block;
+    vertical-align: middle;
+}
+.contest-list{
+    width:9.7rem;
+    margin: 0 auto;
+}
+.contest-item{
+    width:4.38rem;
+    height:3.58rem;
+    margin: 0 0.13rem 0.42rem 0.13rem;
+    overflow:hidden;
+    float:left;
+    font-size:0;
+    position:relative;
+    border-radius:  0.1rem;
+    border: 0.1rem solid #191e6c;
+    background-color: #fff;
+    padding:0;
+}
+.contest-item img{
+    width:4.38rem;
+    height:3.58rem;
+    font-size:0;
+    display:block;
+}
+.contest-item .contest-item-name{
+    width:4.38rem;
+    height:3.58rem;
+    line-height:3.58rem;
+    position:absolute;
+    text-align:center;
+    top:0;
+    left:0;
+    font-size:0.6rem;
+    color:#fff;
+    text-shadow: 0 0rem 0.5rem #000;
+    text-indent: 0.15rem;
+    letter-spacing: 0.15rem;
+    font-weight:bold;
+}
+
+.contest-list-btn
+{
+    padding-top: .2rem;
+    text-align:center;
+    font-size:0;
+}
+.contest-list-btn .contest-return{
+    padding: 0 0.6rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    display: inline-block;
+    color: #191e6c;
+    font-size: 0.44rem;
+    font-weight: 100;
+}
+.contest-map{
+    width:9.22rem;
+    height: 7.78rem;
+    margin:0 auto 0.42rem auto;
+    border-radius:  0.1rem;
+    border: 0.1rem solid #191e6c;
+    background-color: #fff;
+    padding:0;
 }

@@ -4,15 +4,12 @@
 	var formEle = $('#js_form'),
 		nameEle = $('#js_name'), //姓名
 		cityEle = $('#js_city'), //城市
-		addressEle = $('#js_address'), //详细地址
-		birthdayEle = $('#js_birthday'), //生日
-		telEle = $('#js_tel'),	//电话
-		transitnumEle = $('#js_transitnum'), //全顺数量
-		mileageEle = $('#js_mileage'),	//里程
-		puydateEle = $('#js_puydate'),	//购买日期
-		s4Ele = $('#js_4S'),			//4s店
 		salesnameEle = $('#js_salesname'),	//业务员姓名
-		salestelEle = $('#js_salestel');	//业务员电话
+		salestelEle = $('#js_salestel'),	//业务员电话
+		carnameEle = $('#js_carname'),	//推荐车主姓名
+		cartelEle = $('#js_cartel'),	//推荐车主电话
+		caridEle = $('#js_carid'),	//车辆代码
+		puydateEle = $('#js_puydate'); // 车辆购买时间
 
 	puydateEle.val(getNowFormatDate());
 
@@ -41,11 +38,11 @@
 			var _self = this;
 
 			formEle.find('input').on('focus',function(){
-				$(this).parents('tr').find('.tip-error').removeClass('show');
+				$(this).parents('td').removeClass('edit-error');
 			});
 
 			formEle.find('select').on('focus',function(){
-				$(this).parents('tr').find('.tip-error').removeClass('show');
+				$(this).parents('td').removeClass('edit-error');
 			});
 
 			formEle.find('input').on('blur',function(){
@@ -57,9 +54,6 @@
 			});
 
 			submitBtn.on('click',function(){
-				var sexVal = $("input[name='sex']:checked").val();	//性别值
-				var carmodelVal = $("input[name='carmodels']:checked").val(); //车型值
-
 				//验证表单
 				var submitType = _self.checkForm();
 
@@ -69,14 +63,15 @@
 				}
 
 			});
-
+			// var jsBase = "/resources/";
+			var jsBase = "/";
 			$("#js_select_address").citySelect({
-				'url':"/resources/js/form/city.js",
+				'url': jsBase + "js/form/city.js",
 				nodata:"none",required:false
 			});
 
 			$("#js_select_store").citySelect({
-				'url':"/resources/js/form/store.js",
+				'url': jsBase + "js/form/store.js",
 				nodata:"none",required:false
 			});
 
@@ -85,60 +80,55 @@
 			var _self = this;
 
 			var submitType = true;
-			$('.tip-error').removeClass('show');
+			$('.edit-cont').removeClass('edit-error');
 
 			//姓名
 			if(!$.trim(nameEle.val()) || (!_self.isCName($.trim(nameEle.val())) && !_self.isEName($.trim(nameEle.val())))){
-				nameEle.parents('tr').find('.tip-error').addClass('show');
+				nameEle.parents('td').addClass('edit-error');
 				submitType = false;
 			}
 
 			//地址
 			//if($.trim(cityEle.val()) == 0 || !$.trim(addressEle.val())){
 			if($.trim(cityEle.val()) == 0){
-				cityEle.parents('tr').find('.tip-error').addClass('show');
-				submitType = false;
-			}
-
-			//电话
-			if(!$.trim(telEle.val()) || (!_self.isTel($.trim(telEle.val())) && !_self.isMobile($.trim(telEle.val())))){
-				telEle.parents('tr').find('.tip-error').addClass('show');
-				submitType = false;
-			}
-
-			//全顺数量
-			if(!$.trim(transitnumEle.val()) || transitnumEle.val() < 0){
-				transitnumEle.parents('tr').find('.tip-error').addClass('show');
-				submitType = false;
-			}
-
-			//里程
-			if(!$.trim(mileageEle.val()) || mileageEle.val() < 0){
-				mileageEle.parents('tr').find('.tip-error').addClass('show');
+				cityEle.parents('td').addClass('edit-error');
 				submitType = false;
 			}
 
 			//经销上验证
 			if(checkType == 'dealer'){
-				//4s店
-				if($.trim(s4Ele.val()) == 0 || !$.trim(s4Ele.val())){
-					s4Ele.parents('tr').find('.tip-error').addClass('show');
-					submitType = false;
-				}
 
 				//业务员姓名
 				if(!$.trim(salesnameEle.val()) || (!_self.isCName($.trim(salesnameEle.val())) && !_self.isEName($.trim(salesnameEle.val())))){
-					salesnameEle.parents('tr').find('.tip-error').addClass('show');
+					salesnameEle.parents('td').addClass('edit-error');
 					submitType = false;
 				}
 
 				//业务员电话
 				if(!$.trim(salestelEle.val()) || (!_self.isTel($.trim(salestelEle.val())) && !_self.isMobile($.trim(salestelEle.val())))){
-					salestelEle.parents('tr').find('.tip-error').addClass('show');
+					salestelEle.parents('td').addClass('edit-error');
 					submitType = false;
 				}
+
 			}
 
+			//推荐车主姓名
+			if(!$.trim(carnameEle.val()) || (!_self.isCName($.trim(carnameEle.val())) && !_self.isEName($.trim(carnameEle.val())))){
+				carnameEle.parents('td').addClass('edit-error');
+				submitType = false;
+			}
+
+			//推荐车主电话
+			if(!$.trim(cartelEle.val()) || (!_self.isTel($.trim(cartelEle.val())) && !_self.isMobile($.trim(cartelEle.val())))){
+				cartelEle.parents('td').addClass('edit-error');
+				submitType = false;
+			}
+
+			//推荐的车主车辆代码
+			if(!$.trim(caridEle.val()) || (!_self.isVincode($.trim(caridEle.val())) )){
+				caridEle.parents('td').addClass('edit-error');
+				submitType = false;
+			}
 
 			return submitType;
 
@@ -157,8 +147,10 @@
 		},
 		isEName: function(str) {
 			return (new RegExp(/^[a-zA-Z]+$/).test($.trim(str)));
+		},
+		isVincode: function(str) {
+			return (new RegExp(/^[a-zA-Z]{8}(\d|[a-zA-Z]){9}$/).test($.trim(str)));
 		}
-
 	};
 
 	formPage.init();
