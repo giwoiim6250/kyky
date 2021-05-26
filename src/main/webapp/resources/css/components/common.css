@@ -13,12 +13,25 @@ body{
   background-size: 100% auto;
   background-color:#fff;
 }
+.pub-cont-box{
+   border-radius:  0.1rem;
+  border: 0.1rem solid #191e6c;
+  background-color: #fff;
+  padding-bottom: 2rem;
+}
 
 .pub-bg-inner{
   background: url(../../images/public/pub-bottom.jpg) no-repeat;
   background-size: 100% auto;
   background-position: 0 bottom;
   padding-bottom: 5.3rem;
+}
+.pub-car-bottom{
+  background: url(../../images/public/pub-bottom.png) no-repeat;
+  background-size: 100% auto;
+  background-position: 0 bottom;
+  height:4.91rem;
+  margin-top:-1.5rem;
 }
 .pub-bottom{
   background: url(../../images/public/pub-bottom.jpg) no-repeat;

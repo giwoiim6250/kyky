@@ -387,3 +387,89 @@ td.td-sex label span
     background-color: #fff;
     padding:0;
 }
+
+.rule-box{
+    width:7.2rem;
+    margin:0.17rem auto 0 auto;
+    padding-bottom: 2.5rem;
+}
+.rule-box-cont{
+    padding:0.9rem 0.2rem 0.6rem 0.45rem;
+    color:#191e6c;
+    text-align:left;
+    font-size:0.3rem;
+    list-style:square;
+}
+.rule-box-cont li{
+    line-height:  150%;
+    padding-bottom:0.2rem;
+    margin-left:0.3rem;
+    text-align:left;
+
+    list-style:square;
+}
+.rule-list-btn,.gift-list-btn
+{
+    padding-top: .2rem;
+    text-align:center;
+    font-size:0;
+}
+
+.rule-btn,.gift-btn{
+    padding: 0;
+    height: 0.8rem;
+    width: 2.48rem;
+    line-height: 0.8rem;
+    display: inline-block;
+    color: #191e6c;
+    font-size: 0.44rem;
+    font-weight: 100;
+    margin: 0 0.23rem;
+}
+
+
+.gift-box{
+    width:8.82rem;
+    margin:0.17rem auto 0 auto;
+    padding-bottom: 2.5rem;
+}
+.gift-search-box{
+    height: 1rem;
+    border-bottom: 0.1rem solid #191e6c;
+    position:relative;
+    font-size:0;
+}
+.gift-search-box input{
+    width:7.06rem;
+    height: 0.84rem;
+    padding:0 0.15rem;
+    margin:0.08rem 0 0 0.08rem;
+     background-color: #fff;
+    overflow: hidden;
+    box-shadow: inset 0 0 0.3rem #333;
+    border:0;
+    font-size:0.32rem;
+}
+.gift-search-btn{
+    width:1.37rem;
+    height:0.84rem;
+    background:url(../../images/public/search-btn.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    position:absolute;
+    right:0;
+    top:0.08rem;
+}
+.gift-box-cont{
+    height:7.86rem;
+    margin: 0.08rem 0.08rem;
+    padding: 0.55rem 0.15rem 0.3rem 0.3rem;
+    overflow-y:auto;
+    overflow-x:hidden;
+    box-shadow: inset 0 0 0.3rem #333;
+}
+.gift-box-cont td{
+    font-size:0.3rem;
+    color:#191e6c;
+    text-align:center;
+    padding: 0.1rem 0;
+}
