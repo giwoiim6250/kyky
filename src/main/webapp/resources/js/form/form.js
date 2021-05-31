@@ -82,21 +82,22 @@
 			var submitType = true;
 			$('.edit-cont').removeClass('edit-error');
 
-			//姓名
-			if(!$.trim(nameEle.val()) || (!_self.isCName($.trim(nameEle.val())) && !_self.isEName($.trim(nameEle.val())))){
-				nameEle.parents('td').addClass('edit-error');
-				submitType = false;
-			}
 
-			//地址
-			//if($.trim(cityEle.val()) == 0 || !$.trim(addressEle.val())){
-			if($.trim(cityEle.val()) == 0){
-				cityEle.parents('td').addClass('edit-error');
-				submitType = false;
-			}
 
 			//经销上验证
 			if(checkType == 'dealer'){
+				//姓名
+				if(!$.trim(nameEle.val()) || (!_self.isCName($.trim(nameEle.val())) && !_self.isEName($.trim(nameEle.val())))){
+					nameEle.parents('td').addClass('edit-error');
+					submitType = false;
+				}
+
+				//地址
+				//if($.trim(cityEle.val()) == 0 || !$.trim(addressEle.val())){
+				if($.trim(cityEle.val()) == 0){
+					cityEle.parents('td').addClass('edit-error');
+					submitType = false;
+				}
 
 				//业务员姓名
 				if(!$.trim(salesnameEle.val()) || (!_self.isCName($.trim(salesnameEle.val())) && !_self.isEName($.trim(salesnameEle.val())))){

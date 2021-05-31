@@ -24,79 +24,107 @@
 				</div>
 				<div class="gift-box pub-cont-box">
 					<div class="gift-search-box">
-						<input type="text" value="" />
-						<div class="gift-search-btn">
+						<input type="text" value="" placeholder="请输入搜索关键字" id="search-key"/>
+						<div class="gift-search-btn" id="search-btn">
 						</div>
 					</div>
 					<div class="gift-box-cont">
 						<div class="gift-box-cont-tab">
 						<table width="100%">
-							<tr>
-								<td>姓名</td>
-								<td>经销商</td>
-								<td>抽中奖品</td>
-								<td>已推荐人数</td>
-							</tr>
-							<tr>
-								<td>李xx</td>
-								<td>南昌</td>
-								<td>200元京东卡</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>李xx</td>
-								<td>南昌</td>
-								<td>200元京东卡</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>李xx</td>
-								<td>南昌</td>
-								<td>200元京东卡</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>李xx</td>
-								<td>南昌</td>
-								<td>200元京东卡</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>李xx</td>
-								<td>南昌</td>
-								<td>200元京东卡</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>李xx</td>
-								<td>南昌</td>
-								<td>200元京东卡</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>李xx</td>
-								<td>南昌</td>
-								<td>200元京东卡</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>李xx</td>
-								<td>南昌</td>
-								<td>200元京东卡</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>李xx</td>
-								<td>南昌</td>
-								<td>200元京东卡</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>李xx</td>
-								<td>南昌</td>
-								<td>200元京东卡</td>
-								<td>7</td>
-							</tr>
+							<thead>
+								<tr>
+									<td>姓名</td>
+									<td>经销商</td>
+									<td>抽中奖品</td>
+									<td>已推荐人数</td>
+								</tr>
+							</thead>
+							<tbody id="list-box">
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>李xx</td>
+									<td>南昌</td>
+									<td>200元京东卡</td>
+									<td>7</td>
+								</tr>
+							</tbody>
 						</table>
 						</div>
 					</div>
@@ -111,6 +139,49 @@
 			</div>
 		</div>
     <script src="js/public/zepto.min.js"></script>
-    <script src="js/contest/contest.js"></script>
+    <script src="js/public/dialogPrompt.js"></script>
+    <script>
+    		 $(document).ready(function(){
+    			var eleSearchInput = $('#search-key');
+    			var eleSearchBtn = $('#search-btn');
+    			var eleListBox = $('#list-box');
+
+    			eleSearchBtn.on('click', function(){
+    				var searchVal = $.trim(eleSearchInput.val());
+    				if(searchVal == ''){
+    					ECar.dialogPrompt({text:'请输入要搜索的关键字',clickClose:true});
+    					return;
+    				}
+    				$.ajax({
+					type: "POST",
+					url: '/?.htm',
+					data:{
+						searchKey:  searchVal
+					},
+					dataType: "JSON",
+					success: function(data){
+						var giftList = data;
+						var giftListHtml = '';
+						if(data === "-1" || data == -1){
+							ECar.dialogPrompt({text:'您一天只能点一次赞哦！<br/>请24小时之后再来',clickClose:true});
+						}else{
+							for(var i= 0;i<giftList.length;i++){
+								giftListHtml += '<tr>';
+								giftListHtml += '<td>' + giftList[i].name + '</td>';
+								giftListHtml += '<td>' + giftList[i].jxs + '</td>';
+								giftListHtml += '<td>' + giftList[i].giftName + '</td>';
+								giftListHtml += '<td>' + giftList[i].tjNumber + '</td>';
+								giftListHtml += '</tr>';
+							}
+							eleListBox.html(giftListHtml);
+						}
+					},
+					error: function(){
+						eleListBox.html('');
+					}
+			  	});
+    			})
+    		});
+    </script>
 </body>
 </html>
