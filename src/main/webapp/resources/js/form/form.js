@@ -63,8 +63,8 @@
 				}
 
 			});
-			// var jsBase = "/resources/";
-			var jsBase = "/";
+			var jsBase = "/resources/";
+			// var jsBase = "/";
 			$("#js_select_address").citySelect({
 				'url': jsBase + "js/form/city.js",
 				nodata:"none",required:false

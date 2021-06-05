@@ -57,9 +57,15 @@
   margin:0.2rem auto 0 auto;
   padding: 0.35rem 0;
 }
+
+.dealer-edit-cont-info.dealer-error{
+      border: 0.1rem solid #fc7070;
+}
 .dealer-success-info{
     height: 5rem;
     text-align:center;
+    display: flex;
+    align-items:center;
 }
 .dealer-success-info::after{
     height: 5rem;
@@ -77,6 +83,19 @@
      letter-spacing: 0.15rem;
     /*text-shadow: 0 0 0.1rem #333;*/
 }
+.dealer-error .success-info-middle{
+    color:#fc7070;
+}
+.dealer-error .success-info-text{
+    padding-top: 0.3rem;
+    color:#fc7070;
+    font-size: 0.4rem;
+}
+.dealer-error .btn-success-form{
+     border: 0.1rem solid #fc7070;
+     color:#fc7070;
+}
+
 .btn-success-form{
     width: 4.24rem;
     height: 0.8rem;
@@ -310,11 +329,18 @@ td.td-sex label span
     height:1.33rem;
     padding:0.2rem 0 0.1rem 0;
     font-size: 0.44rem;
-    text-align:center;
     color: #191e6c;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .contest-subtitle .contest-subtitle-tip{
     font-size:0.24rem;
+}
+.contest-subtitle-text{
+    display:block;
+    text-align:center;
+    margin:0 auto;
 }
 .contest-subtitle::after{
     height:1.33rem;
