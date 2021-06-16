@@ -163,3 +163,100 @@ body{
   background: url(../../images/public/return1.png) no-repeat;
   background-size:100% 100%;
 }
+
+/*定制弹窗*/
+
+.pop-prize{
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  z-index: 35;
+  /*height:6.5rem;*/
+  margin-top:-3.3rem;
+}
+.pop-prize-mode{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 34;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.pop-prize-header{
+  width:100%;
+  height:1.53rem;
+  line-height:1.1rem;
+  /*background-image: url("../../images/public/pop-gift-title.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;*/
+  background-repeat: no-repeat;
+  background-image: url(../../images/public/pop-gift-title.png);
+  background-size: 100% 100%;
+  background-position: 0 0;
+
+  position: relative;
+  text-align:center;
+  font-size:0.7rem;
+  z-index: 2;
+  color:#fff;
+}
+.pop-prize-cont{
+  width:81%;
+  //height:4.55rem;
+  margin:-0.5rem auto 0 auto;
+  background: url(../../images/public/pop-bg.jpg) #fff;
+  background-size: 100% 100%;
+  border-radius: 0.07rem;
+  padding-top:0.8rem;
+  font-size:0.4rem;
+  color:#000;
+  text-align: center;
+  line-height: 180%;
+  padding-bottom:0.4rem;
+}
+.prize-show-style{
+  background-color:#005691;
+  width:2.28rem;
+  height:0.92rem;
+  line-height: 0.92rem;
+  color:#fff;
+  text-decoration: none;
+  display:inline-block;
+  /*border-radius: 0.1rem;*/
+  font-size:0.46rem;
+  font-weight:bold;
+}
+.pop-prize-cont-txt{
+  padding:0.55rem 0 0.55rem 0;
+  min-height: 1.42rem;
+}
+.pop-prize-cont-txt i.ver-i{
+  min-height: 1.42rem;
+  display:inline-block;
+  vertical-align: middle;
+  width:0px;font-size:0px;overflow:hidden;
+}
+.pop-prize-cont-txt span.ver-span{
+  display:inline-block;
+  vertical-align: middle;
+}
+.pop-prize-btn-box{
+  padding:0.1rem 0 0.1rem 0;
+  text-align: center;
+}
+.pop-prize-btn-box a{
+  display:inline-block;
+  height:0.6rem;
+  line-height: 0.6rem;
+}
+.pop-btn-a-link{
+  color:#005691;
+  font-size:0.36rem;
+}
+.pop-prize-cont-txt .num-bsx{
+  padding:0px 0.15rem;
+  font-size:0.6rem;
+  color:#e20015;
+}

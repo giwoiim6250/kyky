@@ -1,5 +1,6 @@
+
 ;(function(){
-	
+
 	var mp3Audio = $('#js_mp3_audio'),
 		mp3Img = $('#js_mp3_img');
 
@@ -60,7 +61,18 @@
 	    }
 	}
 
+	function openPop(_id){
+		$('#'+_id).show();
+	}
+
+	$('.js_pop_close').on('click',function(){
+		$('.js_pop_continer').hide();
+	});
+
 	window.getCookie = _getCookie;
 	window.setCookie = _setCookie;
-
+	window.openPop = openPop;
 })();
+
+
+

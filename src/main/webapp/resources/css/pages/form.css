@@ -499,3 +499,124 @@ td.td-sex label span
     text-align:center;
     padding: 0.14rem 0;
 }
+
+
+
+
+.game-rotate{
+  /*width:8.93rem;
+  height:8.93rem;*/
+  width:9.5rem;
+  /*height:9.5rem;*/
+  margin: 1.45rem auto;
+  overflow: hidden;
+  position:relative;
+}
+.game-rotate-needle{
+      width:2.02rem;
+      height:3.15rem;
+      position:absolute;
+      top:0;
+      left:50%;
+      margin-left:-1.01rem;
+      background-image: url("../../images/rotate/rotate-zz.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.game-rotate-bg{
+  width:9.5rem;
+  height:9.5rem;
+  background-image: url("../../images/rotate/rotate-bg.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  position:relative;
+  margin-top:1.07rem;
+}
+
+.game-rotate-img{
+  width:9.27rem;
+  height:9.27rem;
+  position:absolute;
+  top:0.12rem;
+  left:0.12rem;
+}
+.game-rotate-img img{
+  width:9.27rem;
+  height:9.27rem;
+}
+.game-rotate-rel{
+  width:9.27rem;
+  height:9.27rem;
+  position:relative;
+}
+.game-rotate-btn{
+  position:absolute;
+  width:2.99rem;
+  height:2.99rem;
+  margin:-1.495rem 0 0 -1.495rem;
+  top:50%;
+  left:50%;
+  background-image: url("../../images/rotate/rotate-go.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.pop-prize-box{
+     width: 8.5rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius:  0.1rem;
+  border: 0.1rem solid #191e6c;
+  background-color: #fff;
+  text-align: center;
+  z-index: 35;
+  height:6.7rem;
+  -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+}
+.pop-prize-box-cont{
+ padding:0.8rem 0 1rem 0;
+}
+.prize-title{
+    font-size: 0.72rem;
+    text-align:center;
+    padding: 0.2rem 0;
+    line-height: 150%;
+}
+.fb{font-weight: bold;}
+.prize-info{
+    font-size: 0.44rem;
+    text-align:center;
+    padding: 0.1rem 0;
+    line-height: 150%;
+}
+.f60{
+    font-size:0.6rem;
+}
+.prize-info.f60{
+    font-size:0.6rem;
+    padding: 0 0 0.1rem 0;
+}
+.prize-success{
+    color:#191e6c;
+}
+.prize-error{
+    color:#e56e55;
+}
+
+.pop-prize-box-btn{
+    text-align:center;
+}
+.pop-prize-box-btn a{
+    text-align:center;
+    font-size: 0.44rem;
+    border-radius:  0.1rem;
+  border: 0.1rem solid #191e6c;
+  color:#191e6c;
+  height: 1.22rem;
+  line-height: 1.22rem;
+  padding: 0 0.6rem;
+  display: inline-block;
+  text-decoration: none;
+}
